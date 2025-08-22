@@ -7,6 +7,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+      setIsMobileMenuOpen(false); // Close mobile menu on scroll
     };
 
     window.addEventListener('scroll', handleScroll);
