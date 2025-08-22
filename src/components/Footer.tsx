@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-foreground">
-                &lt;Dev /&gt;
+                &lt;ATL Dev /&gt;
               </h3>
               <p className="text-muted-foreground leading-relaxed">
                 Desarrollador especializado en crear soluciones robustas y escalables 
@@ -63,7 +63,7 @@ const Footer = () => {
 
           <div className="border-t border-border pt-8 text-center">
             <p className="text-muted-foreground flex items-center justify-center gap-2">
-              © {currentYear} Tu Nombre. Hecho con{" "}
+              © {currentYear} ATL Dev. Hecho con{" "}
               <Heart className="w-4 h-4 text-red-500" />
               {" "}y mucho café
             </p>

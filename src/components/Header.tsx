@@ -29,7 +29,7 @@ const Header = () => {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-semibold text-foreground hover:text-primary transition-colors"
           >
-            &lt;Dev /&gt;
+            &lt;ATL Dev /&gt;
           </button>
           
           <div className="hidden md:flex items-center space-x-8">

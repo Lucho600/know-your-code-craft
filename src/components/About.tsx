@@ -34,7 +34,7 @@ const About = () => {
               <Card className="p-6 border border-border hover:shadow-soft transition-all duration-300">
                 <h3 className="text-xl font-semibold mb-3 text-foreground">Experiencia</h3>
                 <p className="text-muted-foreground">
-                  [X] años desarrollando aplicaciones empresariales y móviles
+                  3 años desarrollando aplicaciones empresariales y móviles
                 </p>
               </Card>
 

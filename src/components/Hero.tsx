@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in">
             Hola, soy{" "}
             <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              [Tu Nombre]
+              [Armando]
             </span>
           </h1>
           
@@ -49,9 +49,9 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-6 mb-16">
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Mail, href: 'mailto:tu@email.com', label: 'Email' }
+              { icon: Github, href: 'https://github.com/armando-tl', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/atldev', label: 'LinkedIn' },
+              { icon: Mail, href: 'mailto:amdtrespalacios@gmail.com', label: 'Email' }
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

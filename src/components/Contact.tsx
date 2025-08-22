@@ -35,20 +35,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "tu@email.com",
-      href: "mailto:tu@email.com"
+      value: "amdtrespalacios@gmail.com",
+      href: "mailto:amdtrespalacios@gmail.com"
     },
     {
       icon: Phone,
       title: "Teléfono",
-      value: "+57 123 456 7890",
-      href: "tel:+571234567890"
+      value: "+57 311 406 2565",
+      href: "tel:+573114062565"
     },
     {
       icon: MapPin,
       title: "Ubicación",
-      value: "Tu Ciudad, País",
-      href: "#"
+      value: "Bucaramanga, Colombia",
+      href: "none"
     }
   ];
 
@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="space-y-4">
                 {contactInfo.map(({ icon: Icon, title, value, href }) => (
                   <Card key={title} className="p-4 border border-border hover:shadow-soft transition-all duration-300">
-                    <a 
+                    {/*<a
                       href={href}
                       className="flex items-center space-x-4 text-muted-foreground hover:text-primary transition-colors"
                     >
@@ -88,7 +88,32 @@ const Contact = () => {
                         <p className="font-medium text-foreground">{title}</p>
                         <p className="text-sm">{value}</p>
                       </div>
-                    </a>
+                    </a>*/}
+                    {href !== "none" ? (
+                        <a
+                            href={href}
+                            className="flex items-center space-x-4 text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          <div className="p-2 bg-primary/10 rounded-full">
+                            <Icon className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-foreground">{title}</p>
+                            <p className="text-sm">{value}</p>
+                          </div>
+                        </a>
+                    ) : (
+                        <div className="flex items-center space-x-4 text-muted-foreground">
+                          <div className="p-2 bg-primary/10 rounded-full">
+                            <Icon className="w-5 h-5 text-primary" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-foreground">{title}</p>
+                            <p className="text-sm">{value}</p>
+                          </div>
+                        </div>
+                    )}
+
                   </Card>
                 ))}
               </div>
